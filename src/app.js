@@ -7,8 +7,8 @@ app.use(express.json());
 // Write a GET Request to get the next number from the input 'num'.
 // Endpoint : /api/get-next-num
 // Return the response as {message : , status: }
-app.get('./api/get-next-num',(req,res)=>{
-    let{num}=req.body;
+app.get('/api/get-next-num',(req,res)=>{
+    let {num}=req.body;
     num=parseInt(num);
     res.send({message:num+1,status:'success'})
 })
